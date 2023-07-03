@@ -2,4 +2,11 @@
   <summary> OBS Source Service to audit all crates.io and dependencies in a Rust project for security issues</summary>
   <description>This service audits a Rust application containing a Cargo.lock
   for security issues that are known upstream by the Rust Security project.</description>
+
+  <parameter name="srcdir">
+    <description>Where to find unpacked sources. Default: None</description>
+  </parameter>
+  <parameter name="lockfile">
+    <description>Where to find the cargo lock file if None searching for a file named "Cargo.lock" Default: None</description>
+  </parameter>
 </service>
